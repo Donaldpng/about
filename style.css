@@ -14,8 +14,8 @@ body {
 
 .links {
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      flex-wrap: wrap;
       gap: 15px;
     }
 
