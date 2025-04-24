@@ -35,6 +35,9 @@ body {
     }
 
 .link-item {
+      width: 220px;
+      text-align: center;
+      justify-content: center;
       text-decoration: none;
       color: var(--text-color);
       background: var(--link-bg);
@@ -44,7 +47,6 @@ body {
       align-items: center;
       gap: 10px;
       transition: background 0.3s;
-      width: 50px
     }
 
 .link-item:hover {
