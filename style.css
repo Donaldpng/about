@@ -1,41 +1,74 @@
-body {
+    :root {
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+      --link-bg: #e0e0e0;
+      --link-hover: #d2d2d2;
+    }
+
+    body.dark {
+      --bg-color: #1e1e1e;
+      --text-color: #f0f0f0;
+      --link-bg: #2d2d2d;
+      --link-hover: #444;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
       font-family: Arial, sans-serif;
       text-align: center;
-      background-color: #f9f9f9;
-      color: #333;
       margin: 0;
       padding: 40px;
+      transition: background-color 0.3s, color 0.3s;
     }
 
-.title {
+    .title {
       font-size: 2.5rem;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
-.links {
+    .links {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      align-items: center;
       gap: 15px;
     }
 
-.link-item {
+    .link-item {
       text-decoration: none;
-      color: #333;
-      background: #e0e0e0;
-      padding: 10px 16px;
+      color: var(--text-color);
+      background: var(--link-bg);
+      padding: 12px 20px;
       border-radius: 12px;
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
       transition: background 0.3s;
     }
 
-.link-item:hover {
-      background: #d2d2d2;
+    .link-item:hover {
+      background: var(--link-hover);
     }
 
-.link-item img {
+    .link-item img {
       width: 20px;
       height: 20px;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--link-bg);
+      border: none;
+      padding: 10px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      color: var(--text-color);
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .theme-toggle:hover {
+      background: var(--link-hover);
     }
