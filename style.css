@@ -44,6 +44,7 @@ body {
       align-items: center;
       gap: 10px;
       transition: background 0.3s;
+      width: 50px
     }
 
 .link-item:hover {
